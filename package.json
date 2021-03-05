@@ -1,0 +1,40 @@
+{
+  "name": "@eonix-io/ux-core",
+  "description": "Common user interface styles and components for use in plugins",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/eonix-io/ux-core"
+  },
+  "version": "0.0.1",
+  "author": {
+    "name": "Josh Kraker",
+    "email": "joshkrak@gmail.com"
+  },
+  "scripts": {
+    "start": "vue-cli-service serve",
+    "build": "vue-cli-service build --target lib --name eonix-ux-core src/index.ts",
+    "lint": "eslint src/**/*.{ts,vue}"
+  },
+  "main": "dist/eonix-ux-core.umd.min.js",
+  "unpkg": "dist/eonix-ux-core.umd.min.js",
+  "files": [
+    "dist/"
+  ],
+  "private": false,
+  "license": "MIT",
+  "dependencies": {
+    "vue": "^3.0.7"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.15.2",
+    "@typescript-eslint/parser": "^4.15.2",
+    "@vue/cli-plugin-typescript": "^4.5.11",
+    "@vue/cli-service": "^4.5.11",
+    "@vue/compiler-sfc": "^3.0.7",
+    "@vuedx/typescript-plugin-vue": "^0.6.3",
+    "eslint": "^7.21.0",
+    "eslint-plugin-vue": "^7.7.0",
+    "postcss-nested": "^4.2.3",
+    "typescript": "^4.2.3"
+  }
+}
