@@ -1,8 +1,7 @@
 
 <template>
    <div
-        class="modal-wrapper shadow fade"
-        :class="{'show': show }"
+        class="modal-wrapper shadow"
         @click.self="shadowClick">
       <div class="modal-content-x container-fluid p-4 center-xy shadow bg-beige border rounded position-absolute col-sm-10 col-lg-8">
          <slot></slot>
@@ -11,7 +10,7 @@
 </template>
 
 <script lang="ts">
-   import { defineComponent, nextTick, onUnmounted, ref } from 'vue';
+   import { defineComponent, onUnmounted } from 'vue';
 
    export default defineComponent({
       emits: {
@@ -33,10 +32,13 @@
             window.removeEventListener('keyup', keyPress);
          });
 
-         const show = ref(false);
-         nextTick(() => show.value = true);
+         //If we want to have .fade on the wrapper div, we need to have it hidden by default then .show it after it's rendered. This will work but it causes a vue internals error when testing with puppeteer. Disabling for now
+         // const show = ref(false);
+         // nextTick(() => show.value = true);
+         //If enabling, add this to the div
+         //:class="{'show': show }"
 
-         return { shadowClick, show };
+         return { shadowClick };
       }
    });
 
