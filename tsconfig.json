@@ -11,6 +11,9 @@
     "noEmitOnError": true,
     "skipLibCheck": true,
     "allowSyntheticDefaultImports": true,
+    "removeComments": true,
+    "forceConsistentCasingInFileNames": true,
+    "importHelpers": true,
     "lib": [
       "esnext",
       "dom"

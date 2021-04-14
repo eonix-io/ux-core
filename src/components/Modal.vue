@@ -17,6 +17,7 @@
          'close': () => true
       },
       setup(_, { emit }) {
+
          const shadowClick = (): void => {
             emit('close');
          };
