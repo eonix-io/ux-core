@@ -32,11 +32,6 @@ module.exports = {
          'off'
       ],
 
-      'vue/mustache-interpolation-spacing': [
-         'error',
-         'never'
-      ],
-
       'vue/html-self-closing': [
          'off'
       ],

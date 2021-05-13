@@ -18,9 +18,6 @@
       "esnext",
       "dom"
     ],
-    "types": [
-      "webpack-env"
-    ],
     "baseUrl": ".",
     "paths": {
       "@/*": [
