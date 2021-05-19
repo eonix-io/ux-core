@@ -11,6 +11,7 @@
     "noEmitOnError": true,
     "skipLibCheck": true,
     "allowSyntheticDefaultImports": true,
+    "noPropertyAccessFromIndexSignature": true, //https://devblogs.microsoft.com/typescript/announcing-typescript-4-2-rc/#nopropertyaccessfromindexsignature
     "removeComments": true,
     "forceConsistentCasingInFileNames": true,
     "importHelpers": true,
