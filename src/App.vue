@@ -13,7 +13,6 @@
    import Config from './components/Config.vue';
 
    export default defineComponent({
-      name: 'App',
       components: {
          Config
       },

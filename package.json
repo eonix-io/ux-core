@@ -21,7 +21,8 @@
     ".": {
       "import": "./dist/ux-core.es.js",
       "require": "./dist/ux-core.umd.js"
-    }
+    },
+    "./style": "./dist/style.css"
   },
   "unpkg": "dist/ux-core.umd.js",
   "files": [
